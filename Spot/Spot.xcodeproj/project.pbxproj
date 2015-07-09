@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8755E2ED8B4692941F4D656A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A15C32F080A24A639166994D /* libPods.a */; };
 		88F713FC1B4EF20900071070 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F713FB1B4EF20900071070 /* main.m */; };
 		88F713FF1B4EF20900071070 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F713FE1B4EF20900071070 /* AppDelegate.m */; };
 		88F714021B4EF20900071070 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F714011B4EF20900071070 /* ViewController.m */; };
@@ -14,6 +15,13 @@
 		88F714071B4EF20900071070 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88F714061B4EF20900071070 /* Images.xcassets */; };
 		88F7140A1B4EF20900071070 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88F714081B4EF20900071070 /* LaunchScreen.xib */; };
 		88F714161B4EF20900071070 /* SpotTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F714151B4EF20900071070 /* SpotTests.m */; };
+		88F714241B4EF44E00071070 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F714201B4EF44E00071070 /* Fabric.framework */; };
+		88F714251B4EF44E00071070 /* DigitsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F714211B4EF44E00071070 /* DigitsKit.framework */; };
+		88F714261B4EF44E00071070 /* DigitsKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 88F714221B4EF44E00071070 /* DigitsKitResources.bundle */; };
+		88F714271B4EF44E00071070 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F714231B4EF44E00071070 /* TwitterCore.framework */; };
+		88F7142E1B4EF65700071070 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F7142D1B4EF65700071070 /* AddressBook.framework */; };
+		88F714311B4EFD8C00071070 /* SpotContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F714301B4EFD8C00071070 /* SpotContactViewController.m */; };
+		88F714341B4F050300071070 /* CreditCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F714331B4F050300071070 /* CreditCardViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CA648AC527B0A61D91032EC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		7565C7B2AC0B6C5ADAE0A993 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		88F713F61B4EF20900071070 /* Spot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88F713FA1B4EF20900071070 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88F713FB1B4EF20900071070 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +50,16 @@
 		88F7140F1B4EF20900071070 /* SpotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88F714141B4EF20900071070 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88F714151B4EF20900071070 /* SpotTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpotTests.m; sourceTree = "<group>"; };
+		88F714201B4EF44E00071070 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		88F714211B4EF44E00071070 /* DigitsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DigitsKit.framework; sourceTree = "<group>"; };
+		88F714221B4EF44E00071070 /* DigitsKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = DigitsKitResources.bundle; path = DigitsKit.framework/Versions/A/Resources/DigitsKitResources.bundle; sourceTree = "<group>"; };
+		88F714231B4EF44E00071070 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		88F7142D1B4EF65700071070 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		88F7142F1B4EFD8C00071070 /* SpotContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpotContactViewController.h; sourceTree = "<group>"; };
+		88F714301B4EFD8C00071070 /* SpotContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpotContactViewController.m; sourceTree = "<group>"; };
+		88F714321B4F050300071070 /* CreditCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditCardViewController.h; sourceTree = "<group>"; };
+		88F714331B4F050300071070 /* CreditCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditCardViewController.m; sourceTree = "<group>"; };
+		A15C32F080A24A639166994D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +67,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88F7142E1B4EF65700071070 /* AddressBook.framework in Frameworks */,
+				88F714251B4EF44E00071070 /* DigitsKit.framework in Frameworks */,
+				88F714271B4EF44E00071070 /* TwitterCore.framework in Frameworks */,
+				8755E2ED8B4692941F4D656A /* libPods.a in Frameworks */,
+				88F714241B4EF44E00071070 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +85,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63FD45721DA6B8999F386A01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88F7142D1B4EF65700071070 /* AddressBook.framework */,
+				88F714201B4EF44E00071070 /* Fabric.framework */,
+				88F714211B4EF44E00071070 /* DigitsKit.framework */,
+				88F714221B4EF44E00071070 /* DigitsKitResources.bundle */,
+				88F714231B4EF44E00071070 /* TwitterCore.framework */,
+				A15C32F080A24A639166994D /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		88F713ED1B4EF20900071070 = {
 			isa = PBXGroup;
 			children = (
 				88F713F81B4EF20900071070 /* Spot */,
 				88F714121B4EF20900071070 /* SpotTests */,
 				88F713F71B4EF20900071070 /* Products */,
+				C84A1A23BB84D57CCAA86BA5 /* Pods */,
+				63FD45721DA6B8999F386A01 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +125,10 @@
 				88F713FE1B4EF20900071070 /* AppDelegate.m */,
 				88F714001B4EF20900071070 /* ViewController.h */,
 				88F714011B4EF20900071070 /* ViewController.m */,
+				88F7142F1B4EFD8C00071070 /* SpotContactViewController.h */,
+				88F714301B4EFD8C00071070 /* SpotContactViewController.m */,
+				88F714321B4F050300071070 /* CreditCardViewController.h */,
+				88F714331B4F050300071070 /* CreditCardViewController.m */,
 				88F714031B4EF20900071070 /* Main.storyboard */,
 				88F714061B4EF20900071070 /* Images.xcassets */,
 				88F714081B4EF20900071070 /* LaunchScreen.xib */,
@@ -119,6 +163,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C84A1A23BB84D57CCAA86BA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0CA648AC527B0A61D91032EC /* Pods.debug.xcconfig */,
+				7565C7B2AC0B6C5ADAE0A993 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88F714191B4EF20900071070 /* Build configuration list for PBXNativeTarget "Spot" */;
 			buildPhases = (
+				6E725A6A70282D5F859F4F88 /* Check Pods Manifest.lock */,
 				88F713F21B4EF20900071070 /* Sources */,
 				88F713F31B4EF20900071070 /* Frameworks */,
 				88F713F41B4EF20900071070 /* Resources */,
+				D48286348AED47B2963BF58F /* Copy Pods Resources */,
+				88F7141F1B4EF42B00071070 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -199,6 +255,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88F714261B4EF44E00071070 /* DigitsKitResources.bundle in Resources */,
 				88F714051B4EF20900071070 /* Main.storyboard in Resources */,
 				88F7140A1B4EF20900071070 /* LaunchScreen.xib in Resources */,
 				88F714071B4EF20900071070 /* Images.xcassets in Resources */,
@@ -214,6 +271,52 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6E725A6A70282D5F859F4F88 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		88F7141F1B4EF42B00071070 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run c08b20670e125cf177b5a6e7bb70d6b4e9b75c27 52f350418a2dbeb5ce538ff885523386379c5314ce4ac5d1d5d1307a36c872af";
+		};
+		D48286348AED47B2963BF58F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		88F713F21B4EF20900071070 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -222,6 +325,8 @@
 				88F714021B4EF20900071070 /* ViewController.m in Sources */,
 				88F713FF1B4EF20900071070 /* AppDelegate.m in Sources */,
 				88F713FC1B4EF20900071070 /* main.m in Sources */,
+				88F714311B4EFD8C00071070 /* SpotContactViewController.m in Sources */,
+				88F714341B4F050300071070 /* CreditCardViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,8 +452,13 @@
 		};
 		88F7141A1B4EF20900071070 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CA648AC527B0A61D91032EC /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Spot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -357,8 +467,13 @@
 		};
 		88F7141B1B4EF20900071070 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7565C7B2AC0B6C5ADAE0A993 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Spot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -418,6 +533,7 @@
 				88F7141B1B4EF20900071070 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88F7141C1B4EF20900071070 /* Build configuration list for PBXNativeTarget "SpotTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +542,7 @@
 				88F7141E1B4EF20900071070 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

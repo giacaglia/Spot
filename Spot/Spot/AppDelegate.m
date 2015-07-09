@@ -7,16 +7,23 @@
 //
 
 #import "AppDelegate.h"
+#import "Stripe.h"
+#import <Fabric/Fabric.h>
+#import <DigitsKit/DigitsKit.h>
+
 
 @interface AppDelegate ()
 
 @end
 
+NSString * const StripePublishableKey = @"pk_test_fW8VwPEUY4bkxviqnfiFnaOU";
+
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [Fabric with:@[DigitsKit]];
+    [Stripe setDefaultPublishableKey:StripePublishableKey];
     return YES;
 }
 
