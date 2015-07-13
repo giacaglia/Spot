@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import <DigitsKit/DigitsKit.h>
 #import "SpotContactViewController.h"
 
 @interface ViewController ()
@@ -18,18 +17,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    DGTAuthenticateButton *authenticateButton = [DGTAuthenticateButton buttonWithAuthenticationCompletion:^(DGTSession *session, NSError *error) {
-//        // play with Digits session
-//    }];
-//    authenticateButton.center = self.view.center;
-//    [self.view addSubview:authenticateButton];
-    [self presentViewController:[SpotContactViewController new] animated:YES completion:nil];
+    self.view.backgroundColor = UIColor.redColor;
+    //    [self presentViewController:[SpotContactViewController new] animated:YES completion:nil];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    [self presentViewController:[SpotContactViewController new] animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {

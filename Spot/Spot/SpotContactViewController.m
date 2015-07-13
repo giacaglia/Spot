@@ -10,6 +10,7 @@
 #import <AddressBook/AddressBook.h>
 #import <AddressBookUI/AddressBookUI.h>
 #import "CreditCardViewController.h"
+#import "ContactViewController.h"
 
 @interface SpotContactViewController ()
 @property (nonatomic, strong) UIImageView *spotImgView;
@@ -79,7 +80,8 @@
     ABAddressBookRef addressBookRef = ABAddressBookCreateWithOptions(NULL, nil);
     ABAddressBookAddRecord(addressBookRef, (ABRecordRef)[self buildContactDetails], nil);
     ABAddressBookSave(addressBookRef, nil);
-    [self presentViewController:[CreditCardViewController new] animated:YES completion:nil];
+    ContactViewController *contactViewController = [[ContactViewController alloc] initWithNibName:@"ContactViewController" bundle:nil];
+    [self presentViewController:contactViewController animated:YES completion:nil];
 }
 
 - (ABRecordRef)buildContactDetails {
