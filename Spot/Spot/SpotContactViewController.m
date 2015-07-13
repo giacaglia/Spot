@@ -8,6 +8,7 @@
 
 #import "SpotContactViewController.h"
 #import <AddressBook/AddressBook.h>
+#import <AddressBookUI/AddressBookUI.h>
 #import "CreditCardViewController.h"
 
 @interface SpotContactViewController ()
@@ -50,7 +51,7 @@
 
 - (void)initializeLastName {
     UILabel *lastNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(250, 60, 100, 30)];
-    lastNameLabel.text = [NSString stringWithFormat:@"%C", 0xe04f];
+    lastNameLabel.text = [NSString stringWithFormat:@"%C", 0xE12F];
     lastNameLabel.font = [UIFont fontWithName:@"Helvetica" size:30.0f];
     [self.view addSubview:lastNameLabel];
 }
@@ -75,23 +76,40 @@
 }
 
 - (void)addContactPressed {
-    ABAddressBookRef addressBook = ABAddressBookCreateWithOptions(nil, nil);
-    ABRecordRef person = ABPersonCreate();
-    NSData *dataRef = UIImagePNGRepresentation(self.spotImgView.image);
-    ABPersonSetImageData(person, (__bridge CFDataRef)dataRef, nil);
-    CFErrorRef  anError = NULL;
-    ABRecordSetValue(person,kABPersonFirstNameProperty, @"Spot",&anError);
-    
-    ABMutableMultiValueRef websiteMultiValue = ABMultiValueCreateMutable(kABPersonURLProperty);
-    ABMultiValueAddValueAndLabel(websiteMultiValue, @"spot.me", (CFStringRef)@"Website", NULL);
-    ABRecordSetValue(person, kABPersonURLProperty, websiteMultiValue, &anError);
-
-    ABMutableMultiValueRef emailMultiValue = ABMultiValueCreateMutable(kABPersonEmailProperty);
-    ABMultiValueAddValueAndLabel(emailMultiValue, @"help@spot.me", (CFStringRef)@"Email", NULL);
-    ABRecordSetValue(person, kABPersonEmailProperty, emailMultiValue, &anError);
-
-    ABAddressBookAddRecord(addressBook, person, &anError);
+    ABAddressBookRef addressBookRef = ABAddressBookCreateWithOptions(NULL, nil);
+    ABAddressBookAddRecord(addressBookRef, (ABRecordRef)[self buildContactDetails], nil);
+    ABAddressBookSave(addressBookRef, nil);
     [self presentViewController:[CreditCardViewController new] animated:YES completion:nil];
+}
+
+- (ABRecordRef)buildContactDetails {
+    NSLog(@"building contact details");
+    ABRecordRef person = ABPersonCreate();
+    CFErrorRef  error = NULL;
+    
+    // First and Second Name
+    ABRecordSetValue(person, kABPersonFirstNameProperty, @"Spot", NULL);
+    ABRecordSetValue(person, kABPersonLastNameProperty, (__bridge CFTypeRef)([NSString stringWithFormat:@"%C", 0xE12F]), NULL);
+
+    // Image
+    NSData *data1 = UIImagePNGRepresentation(self.spotImgView.image);
+    ABPersonSetImageData(person, (__bridge CFDataRef)(data1), &error);
+    
+    // Phone number
+    ABMutableMultiValueRef phoneNumbers = ABMultiValueCreateMutable(kABMultiStringPropertyType);
+    ABMultiValueAddValueAndLabel(phoneNumbers, (__bridge CFStringRef)@"617-981-3206", kABPersonPhoneMobileLabel, NULL);
+    ABRecordSetValue(person, kABPersonPhoneProperty, phoneNumbers, nil);
+
+    // email
+    ABMutableMultiValueRef email = ABMultiValueCreateMutable(kABMultiStringPropertyType);
+    ABMultiValueAddValueAndLabel(email, @"help@spotbanker.com", CFSTR("email"), NULL);
+    ABRecordSetValue(person, kABPersonEmailProperty, email, &error);
+    CFRelease(email);
+    
+    if (error != NULL)
+        NSLog(@"Error: %@", error);
+    
+    return person;
 }
 
 @end

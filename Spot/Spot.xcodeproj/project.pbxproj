@@ -22,6 +22,9 @@
 		88F7142E1B4EF65700071070 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F7142D1B4EF65700071070 /* AddressBook.framework */; };
 		88F714311B4EFD8C00071070 /* SpotContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F714301B4EFD8C00071070 /* SpotContactViewController.m */; };
 		88F714341B4F050300071070 /* CreditCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F714331B4F050300071070 /* CreditCardViewController.m */; };
+		88F714371B4F16B100071070 /* DoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F714361B4F16B100071070 /* DoneViewController.m */; };
+		88F7143A1B501DC200071070 /* CashOutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F714391B501DC200071070 /* CashOutViewController.m */; };
+		88F7143C1B540AD200071070 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F7143B1B540AD200071070 /* AddressBookUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,11 @@
 		88F714301B4EFD8C00071070 /* SpotContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpotContactViewController.m; sourceTree = "<group>"; };
 		88F714321B4F050300071070 /* CreditCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditCardViewController.h; sourceTree = "<group>"; };
 		88F714331B4F050300071070 /* CreditCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditCardViewController.m; sourceTree = "<group>"; };
+		88F714351B4F16B100071070 /* DoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoneViewController.h; sourceTree = "<group>"; };
+		88F714361B4F16B100071070 /* DoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoneViewController.m; sourceTree = "<group>"; };
+		88F714381B501DC200071070 /* CashOutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CashOutViewController.h; sourceTree = "<group>"; };
+		88F714391B501DC200071070 /* CashOutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CashOutViewController.m; sourceTree = "<group>"; };
+		88F7143B1B540AD200071070 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		A15C32F080A24A639166994D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -67,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88F7143C1B540AD200071070 /* AddressBookUI.framework in Frameworks */,
 				88F7142E1B4EF65700071070 /* AddressBook.framework in Frameworks */,
 				88F714251B4EF44E00071070 /* DigitsKit.framework in Frameworks */,
 				88F714271B4EF44E00071070 /* TwitterCore.framework in Frameworks */,
@@ -88,6 +97,7 @@
 		63FD45721DA6B8999F386A01 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				88F7143B1B540AD200071070 /* AddressBookUI.framework */,
 				88F7142D1B4EF65700071070 /* AddressBook.framework */,
 				88F714201B4EF44E00071070 /* Fabric.framework */,
 				88F714211B4EF44E00071070 /* DigitsKit.framework */,
@@ -129,6 +139,10 @@
 				88F714301B4EFD8C00071070 /* SpotContactViewController.m */,
 				88F714321B4F050300071070 /* CreditCardViewController.h */,
 				88F714331B4F050300071070 /* CreditCardViewController.m */,
+				88F714351B4F16B100071070 /* DoneViewController.h */,
+				88F714361B4F16B100071070 /* DoneViewController.m */,
+				88F714381B501DC200071070 /* CashOutViewController.h */,
+				88F714391B501DC200071070 /* CashOutViewController.m */,
 				88F714031B4EF20900071070 /* Main.storyboard */,
 				88F714061B4EF20900071070 /* Images.xcassets */,
 				88F714081B4EF20900071070 /* LaunchScreen.xib */,
@@ -322,6 +336,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88F7143A1B501DC200071070 /* CashOutViewController.m in Sources */,
+				88F714371B4F16B100071070 /* DoneViewController.m in Sources */,
 				88F714021B4EF20900071070 /* ViewController.m in Sources */,
 				88F713FF1B4EF20900071070 /* AppDelegate.m in Sources */,
 				88F713FC1B4EF20900071070 /* main.m in Sources */,

@@ -7,6 +7,7 @@
 //
 
 #import "CreditCardViewController.h"
+#import "DoneViewController.h"
 #import "PTKView.h"
 
 @interface CreditCardViewController ()<PTKViewDelegate>
@@ -47,12 +48,13 @@
 
 
 - (void)paymentView:(PTKView *)view withCard:(PTKCard *)card isValid:(BOOL)valid {
-    self.saveButton.enabled = valid;
+//    self.saveButton.enabled = valid;
     if (valid) self.saveButton.backgroundColor = [UIColor colorWithRed:0 green:0 blue:255 alpha:1.0f];
     else self.saveButton.backgroundColor = [UIColor colorWithRed:0 green:0 blue:255 alpha:0.3f];
 }
 
 - (void)saveCard {
+    [self presentViewController:[DoneViewController new] animated:true completion:nil];
 //    self.saveButton.backgroundColor = [UIColor colorWithRed:0 green:0 blue:255 alpha:1.0f];
 }
 
